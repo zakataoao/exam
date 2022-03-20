@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://vk.com/js/api/openapi.js?169"></script>
+  <title>Донат | АраХния</title>
+</head>
+<body>
+  <div class="parralax"></div>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapp">
+        <div class="header__ip">IP: play.arachny.com</div>
+        <ul class="header__ul">
+          <li class="header__li"><a class="header__link" href="./donate.html">Главная</a></li>
+          <li class="header__li"><a class="header__link" href="./donate.html">Новости</a></li>
+          <li class="header__li"><a class="header__link" href="./donate.html">Донат</a></li>
+        </ul>
+        <div class="header__discord">Наш дискорд</div>
+      </div>
+    </div>
+  </header>
+  <div class="modal">
+    <div class="modal__wrapp">
+      <div class="modal__block modal__buy">
+        <div class="close-btn"></div>
+        <h1 class="modal__title">Творец миров</h1>
+        <div class="modal__price">150 Руб.</div>
+        <form class="modal__form">
+          <input required type="text" class="modal__input" placeholder="Ник на сервере">
+          <button type="submit" class="modal__btn">Оплатить</button>
+        </form>
+      </div>
+      <div class="modal__block modal__benefits">
+        
+      </div>
+    </div>
+  </div>
+  <section class="main">
+    <div class="container">
+      <div class="dgrid">
+        <div class="block deathNote">
+          <div class="block__img">
+          <div class="block__title">Тетрадь смерти</div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="block__img">
+          <div class="block__title">Творец миров</div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="vk_community_messages"></div>
+  <script type="text/javascript">
+    var widget = VK.Widgets.CommunityMessages("vk_community_messages", 210839082);
+    widget.stopTitleAnimation();
+    widget.expand({
+    welcomeScreen: 0,
+    expandTimeout: 100,
+    });
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
